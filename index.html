@@ -1,117 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Healthy Water Solutions LLC | Water Quality Solutions</title>
-  <meta name="description" content="Healthy Water Solutions LLC helps families understand water quality, filtration, and premium wellness-focused water solutions in southeast Wisconsin." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="#top">Healthy Water Solutions</a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#problems">Water Problems</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#quiz">Quiz</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-button" id="menuButton" aria-label="Toggle menu">☰</button>
-    </div>
-  </header>
+<div id="hws-site">
+<style>
+#hws-site{font-family:Arial,Helvetica,sans-serif;color:#1f2d2d;background:#fff;line-height:1.6}
+#hws-site *{box-sizing:border-box}
+#hws-site a{text-decoration:none}
+#hws-site .hws-wrap{width:100%;max-width:1180px;margin:0 auto;padding-left:18px;padding-right:18px}
+#hws-site .hws-section{padding:82px 0}
+#hws-site .hws-section-aqua{background:#dff4f2}
+#hws-site .hws-section-soft{background:#f5f7f6}
+#hws-site .hws-section-white{background:#fff}
+#hws-site .hws-section-label{display:inline-block;background:rgba(15,61,62,.10);color:#0f3d3e;border:1px solid rgba(15,61,62,.16);border-radius:999px;padding:8px 13px;font-size:12px;line-height:1.2;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px}
+#hws-site h1,#hws-site h2,#hws-site h3{color:#102829;margin-top:0}
+#hws-site h1{font-size:clamp(38px,5vw,64px);line-height:1.05;letter-spacing:-.04em;margin-bottom:22px}
+#hws-site h2{font-size:clamp(34px,4vw,50px);line-height:1.1;letter-spacing:-.035em;margin-bottom:20px}
+#hws-site h3{font-size:24px;line-height:1.18;letter-spacing:-.025em;margin-bottom:12px}
+#hws-site p{color:#5f6f6e;font-size:18px;line-height:1.7;margin:0 0 18px}
+#hws-site .hws-lead{font-size:20px;line-height:1.65}
+#hws-site .hws-buttons{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+#hws-site .hws-btn{display:inline-block;padding:15px 24px;border-radius:999px;font-weight:800;font-size:15px;text-align:center;transition:all .2s ease;border:2px solid transparent}
+#hws-site .hws-btn-primary{background:#0f3d3e;color:#fff!important;border-color:#0f3d3e}
+#hws-site .hws-btn-primary:hover{background:#0b2d2e;border-color:#0b2d2e}
+#hws-site .hws-btn-secondary{background:#d8b46a;color:#102829!important;border-color:#d8b46a}
+#hws-site .hws-btn-secondary:hover{background:#cda553;border-color:#cda553}
+#hws-site .hws-btn-outline{background:#fff;color:#0f3d3e!important;border-color:#0f3d3e}
+#hws-site .hws-btn-outline:hover{background:#0f3d3e;color:#fff!important}
+#hws-site .hws-card{background:#fff;border:1px solid rgba(15,61,62,.12);border-radius:28px;padding:30px;box-shadow:0 18px 45px rgba(15,61,62,.11)}
+#hws-site .hws-logo-row{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+#hws-site .hws-logo-row img{width:70px;height:70px;object-fit:cover;border-radius:50%;background:#fff;box-shadow:0 12px 28px rgba(15,61,62,.18);flex-shrink:0}
+#hws-site .hws-logo-text{font-size:18px;font-weight:800;color:#0f3d3e;line-height:1.25}
+#hws-site .hws-logo-text span{font-weight:500;color:#102829}
+#hws-site .hws-badge-row{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px;padding:4px 0}
+#hws-site .hws-badge-row span{display:inline-flex;align-items:center;justify-content:center;background:rgba(15,61,62,.10);color:#0f3d3e;border:1px solid rgba(15,61,62,.16);border-radius:999px;padding:8px 12px;font-size:12px;line-height:1.2;font-weight:800;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+#hws-site .hws-hero-grid,#hws-site .hws-two-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+#hws-site .hws-problem-grid{display:grid;grid-template-columns:1fr .9fr;gap:42px;align-items:start}
+#hws-site .hws-list-check{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+#hws-site .hws-list-check li{background:rgba(255,255,255,.78);border:1px solid rgba(15,61,62,.12);border-radius:16px;padding:14px 16px 14px 44px;position:relative;font-weight:700;color:#1f2d2d}
+#hws-site .hws-list-check li:before{content:"✓";position:absolute;left:15px;top:14px;width:20px;height:20px;border-radius:50%;background:#0f3d3e;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900}
+#hws-site .hws-question-list{list-style:none;padding:0;margin:22px 0 0}
+#hws-site .hws-question-list li{padding:14px 0 14px 34px;border-bottom:1px solid rgba(15,61,62,.12);position:relative;font-size:16px;color:#1f2d2d}
+#hws-site .hws-question-list li:last-child{border-bottom:none}
+#hws-site .hws-question-list li:before{content:"✓";position:absolute;left:0;top:14px;width:22px;height:22px;border-radius:50%;background:#dff4f2;color:#0f3d3e;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px}
+#hws-site .hws-solutions-header,#hws-site .hws-education-header,#hws-site .hws-quiz-header{max-width:820px;margin-bottom:42px}
+#hws-site .hws-education-header,#hws-site .hws-quiz-header{margin-left:auto;margin-right:auto;text-align:center}
+#hws-site .hws-solutions-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:stretch}
+#hws-site .hws-solution-card{background:#fff;border:1px solid rgba(15,61,62,.12);border-radius:26px;padding:24px;box-shadow:0 16px 38px rgba(15,61,62,.10);display:flex;flex-direction:column;height:100%}
+#hws-site .hws-solution-card img{width:100%;height:145px;object-fit:contain;border-radius:18px;background:#f5f7f6;padding:12px;margin-bottom:18px}
+#hws-site .hws-solution-icon,#hws-site .hws-education-icon{width:46px;height:46px;border-radius:16px;background:#dff4f2;color:#0f3d3e;display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:18px;font-size:18px}
+#hws-site .hws-solution-card p{font-size:15.5px;line-height:1.6;flex-grow:1}
+#hws-site .hws-solution-note{margin-top:40px;background:#dff4f2;border-radius:26px;padding:30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;box-shadow:0 14px 32px rgba(15,61,62,.08)}
+#hws-site .hws-solution-note p{margin-bottom:0}
+#hws-site .hws-image-wrap{position:relative}
+#hws-site .hws-image-wrap img{width:100%;min-height:420px;object-fit:cover;border-radius:30px;box-shadow:0 20px 48px rgba(15,61,62,.18);display:block}
+#hws-site .hws-image-badge{position:absolute;left:22px;bottom:22px;background:rgba(255,255,255,.92);border-radius:22px;padding:18px 20px;max-width:320px;box-shadow:0 16px 36px rgba(15,61,62,.18);border:1px solid rgba(15,61,62,.12);backdrop-filter:blur(5px)}
+#hws-site .hws-image-badge strong{display:block;color:#102829;font-size:17px;margin-bottom:4px}
+#hws-site .hws-image-badge span{display:block;color:#5f6f6e;font-size:14px;line-height:1.45}
+#hws-site .hws-quiz-box{background:#fff;border:1px solid rgba(15,61,62,.12);border-radius:30px;padding:34px;box-shadow:0 20px 50px rgba(15,61,62,.12)}
+#hws-site .hws-progress{width:100%;height:10px;background:#f5f7f6;border-radius:999px;overflow:hidden;margin-bottom:28px}
+#hws-site .hws-progress-bar{height:100%;width:0%;background:#0f3d3e;border-radius:999px;transition:width .25s ease}
+#hws-site .hws-question,#hws-site .hws-result{display:none}
+#hws-site .hws-question.active,#hws-site .hws-result.active{display:block}
+#hws-site .hws-question-title{font-size:30px;line-height:1.15;margin:0 0 22px;color:#102829;letter-spacing:-.025em;font-weight:800}
+#hws-site .hws-options{display:grid;gap:12px;margin-top:20px}
+#hws-site .hws-option{width:100%;display:block;text-align:left;border:2px solid transparent;background:#f5f7f6;color:#1f2d2d;border-radius:18px;padding:17px 18px;font-size:16px;font-weight:800;cursor:pointer;transition:all .2s ease}
+#hws-site .hws-option:hover{border-color:#0f3d3e;background:#dff4f2}
+#hws-site .hws-result-badge{display:inline-block;background:#dff4f2;color:#0f3d3e;font-size:13px;font-weight:900;padding:8px 13px;border-radius:999px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.07em}
+#hws-site .hws-result-grid{display:grid;grid-template-columns:1fr .85fr;gap:28px;align-items:start}
+#hws-site .hws-result-card{background:#f5f7f6;border:1px solid rgba(15,61,62,.12);border-radius:24px;padding:26px}
+#hws-site .hws-result-list{padding-left:20px;margin:14px 0 0;color:#1f2d2d}
+#hws-site .hws-small-note{margin-top:24px;font-size:13px!important;color:#6f7f7e!important;border-top:1px solid rgba(15,61,62,.12);padding-top:18px}
+#hws-site .hws-specialist-list{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#hws-site .hws-specialist-list li,#hws-site .hws-feature-list li,#hws-site .hws-final-list li{background:#f5f7f6;border:1px solid rgba(15,61,62,.10);border-radius:15px;padding:13px 14px 13px 40px;position:relative;font-weight:700;color:#1f2d2d;font-size:15px}
+#hws-site .hws-specialist-list li:before,#hws-site .hws-feature-list li:before,#hws-site .hws-final-list li:before{content:"✓";position:absolute;left:14px;top:13px;width:19px;height:19px;border-radius:50%;background:#dff4f2;color:#0f3d3e;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900}
+#hws-site .hws-education-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:stretch}
+#hws-site .hws-education-card{background:#fff;border:1px solid rgba(15,61,62,.12);border-radius:26px;padding:28px;box-shadow:0 16px 38px rgba(15,61,62,.10);min-height:235px}
+#hws-site .hws-education-card p{font-size:15.5px;margin-bottom:0}
+#hws-site .hws-feature-box{margin-top:46px;background:#f5f7f6;border:1px solid rgba(15,61,62,.12);border-radius:30px;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start;box-shadow:0 16px 38px rgba(15,61,62,.08)}
+#hws-site .hws-feature-list,#hws-site .hws-final-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+#hws-site .hws-final-card{background:#fff;color:#1f2d2d;border:1px solid rgba(15,61,62,.12);border-radius:30px;padding:32px;box-shadow:0 20px 48px rgba(15,61,62,.12)}
+#hws-site .hws-footer-info{margin-top:52px;padding-top:28px;border-top:1px solid rgba(15,61,62,.14);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+#hws-site .hws-footer-brand{display:flex;align-items:center;gap:14px}
+#hws-site .hws-footer-brand img{width:58px;height:58px;object-fit:cover;border-radius:50%;background:#fff;box-shadow:0 12px 26px rgba(15,61,62,.16);flex-shrink:0}
+#hws-site .hws-footer-brand strong{display:block;color:#102829;font-size:18px;margin-bottom:2px}
+#hws-site .hws-footer-brand span{display:block;color:#5f6f6e;font-size:14px;line-height:1.35}
+#hws-site .hws-footer-phone{color:#0f3d3e!important;text-decoration:none;font-weight:900;font-size:18px}
+#hws-site .hws-disclaimer{margin-top:24px;font-size:12.5px!important;line-height:1.55!important;color:#6f7f7e!important}
+@media(max-width:1050px){#hws-site .hws-solutions-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){
+#hws-site .hws-section{padding:58px 0}
+#hws-site .hws-hero-grid,#hws-site .hws-two-grid,#hws-site .hws-problem-grid,#hws-site .hws-result-grid,#hws-site .hws-feature-box{grid-template-columns:1fr;gap:30px}
+#hws-site .hws-logo-row{align-items:flex-start}
+#hws-site .hws-logo-row img{width:58px;height:58px}
+#hws-site .hws-logo-text{font-size:16px}
+#hws-site .hws-badge-row span{font-size:11px;padding:7px 10px;white-space:normal}
+#hws-site .hws-buttons{flex-direction:column}
+#hws-site .hws-btn{width:100%}
+#hws-site .hws-card,#hws-site .hws-quiz-box,#hws-site .hws-final-card,#hws-site .hws-feature-box{padding:24px}
+#hws-site .hws-image-wrap img{min-height:320px}
+#hws-site .hws-image-badge{position:static;margin-top:16px;max-width:100%}
+#hws-site .hws-specialist-list,#hws-site .hws-education-grid{grid-template-columns:1fr}
+#hws-site .hws-solution-note{grid-template-columns:1fr;padding:24px}
+#hws-site .hws-footer-info{grid-template-columns:1fr}
+}
+@media(max-width:700px){#hws-site .hws-solutions-grid{grid-template-columns:1fr}#hws-site .hws-solution-card img{height:175px}}
+</style>
 
-  <main id="top">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Water quality education • Filtration • Wellness-focused solutions</p>
-          <h1>Know what is in your water before you choose a solution.</h1>
-          <p class="hero-text">
-            Healthy Water Solutions LLC helps families understand common water quality concerns and compare practical options for cleaner, better-tasting water at home.
-          </p>
-          <div class="button-row">
-            <a class="button primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener">Schedule a Water Consultation</a>
-            <a class="button secondary" href="#quiz">Take the Quick Water Quiz</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <h2>Start here</h2>
-          <p>Not sure whether you need filtration, drinking water upgrades, whole-home protection, or education first?</p>
-          <p>Use the quiz below or schedule a short consultation.</p>
-        </div>
-      </div>
-    </section>
+<section class="hws-section hws-section-aqua"><div class="hws-wrap"><div class="hws-hero-grid"><div><div class="hws-logo-row"><img src="https://lh3.googleusercontent.com/VyfSq_MBYLm3YYYyKGbwVP8tLFSMavYRbXwcQHPD0PVOpzJ8B_NsBU4OKkkbccKYVN0nL9g64QafuLe-gA=w1703" alt="Healthy Water Solutions LLC logo"><div class="hws-logo-text">Healthy Water Solutions LLC<br><span>Premium Water & Home Wellness Guidance</span></div></div><div class="hws-badge-row" aria-label="Healthy Water Solutions focus areas"><span>Luxury Wellness</span><span>Family Protection</span><span>Science-Informed Education</span></div><h1>Premium Water & Home Wellness Solutions for Health-Conscious Families</h1><p class="hws-lead">Healthy Water Solutions LLC helps families take a smarter look at drinking water, daily hydration, shower water, and modern home wellness.</p><p>Work with a local Certified Water Specialist to better understand your options and choose a cleaner, more intentional path for your home.</p><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule Your True Health Strategy Call</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-card"><h2 style="font-size:28px;">Not sure where to start?</h2><p>Answer a few quick questions below and get pointed toward the best starting option for your home.</p><ul class="hws-question-list"><li>Drinking water filtration</li><li>Premium ionized water systems</li><li>Shower and bath water solutions</li><li>Modern home wellness support</li></ul><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule a Strategy Call</a></div><p class="hws-small-note">Educational guidance only. No pressure. No guesswork.</p></div></div></div></section>
 
-    <section class="section" id="problems">
-      <div class="container">
-        <p class="eyebrow">Common concerns</p>
-        <h2>Water issues are not always obvious.</h2>
-        <div class="card-grid three">
-          <article class="card">
-            <h3>Taste and odor</h3>
-            <p>Chlorine, sulfur smells, metallic taste, or stale-tasting water can make bottled water feel like the easier option.</p>
-          </article>
-          <article class="card">
-            <h3>Hard water buildup</h3>
-            <p>Minerals can leave spots, scale, and residue on fixtures, appliances, dishes, and glassware.</p>
-          </article>
-          <article class="card">
-            <h3>Uncertainty</h3>
-            <p>Many families simply do not know what is in their water or which solution actually fits their home.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+<section class="hws-section hws-section-soft"><div class="hws-wrap"><div class="hws-problem-grid"><div><div class="hws-section-label">The Problem</div><h2>Clear water does not always mean clean water.</h2><p>Most people judge their water by how it looks, smells, or tastes. But many common water concerns are not always obvious.</p><p>Depending on your water source, plumbing, and local conditions, your home may have concerns related to chlorine, lead, PFAS, VOCs, sediment, hardness minerals, disinfection byproducts, or other unwanted contaminants.</p><p>Healthy Water Solutions LLC helps you understand the bigger picture before you make a decision, so you can choose a solution with purpose instead of guesswork.</p><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule Your Strategy Call</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-card"><h3>Better questions lead to better decisions.</h3><p>Before choosing a water solution, it helps to ask what your family is actually using every day.</p><ul class="hws-question-list"><li>What water is my family drinking every day?</li><li>Is my current filter doing enough?</li><li>What water are we cooking with?</li><li>Are bottled water trips still worth the time and effort?</li><li>Should filtration come before a premium hydration upgrade?</li></ul></div></div></div></section>
 
-    <section class="section alt" id="solutions">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Learn before you buy</p>
-          <h2>Get matched to the right starting point.</h2>
-          <p>
-            We focus on education first, then help you compare options for drinking water filtration, whole-home water quality, and premium water systems.
-          </p>
-        </div>
-        <div class="checklist">
-          <div>✓ Drinking water filtration guidance</div>
-          <div>✓ Whole-home water quality education</div>
-          <div>✓ Premium water system consultations</div>
-          <div>✓ Local, practical recommendations</div>
-        </div>
-      </div>
-    </section>
+<section class="hws-section hws-section-white"><div class="hws-wrap"><div class="hws-solutions-header"><div class="hws-section-label">Core Solutions</div><h2>Smarter water and home wellness solutions.</h2><p class="hws-lead">Every home is different. Start with the right category, then choose the path that fits your family, your concerns, and your daily routines.</p></div><div class="hws-solutions-grid"><div class="hws-solution-card"><img src="https://i.shgcdn.com/b09a9fc4-355e-47db-83f4-6895503a8cba/-/format/auto/-/quality/normal/-/resize/1920x/" alt="Premium drinking water filtration system"><div class="hws-solution-icon">1</div><h3>Drinking Water Filtration</h3><p>Premium filtration for the water your family drinks, cooks with, makes coffee with, fills bottles with, and uses every day.</p><a class="hws-btn hws-btn-outline" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Ask About Drinking Water</a></div><div class="hws-solution-card"><img src="https://www.enagic.com/images/product-gallery-k8-3.jpg" alt="Premium countertop ionized water system"><div class="hws-solution-icon">2</div><h3>Ionized Water Systems</h3><p>A premium countertop water experience for families who want to build a more intentional daily hydration routine.</p><a class="hws-btn hws-btn-outline" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Ask About Ionized Water</a></div><div class="hws-solution-card"><img src="https://www.enagic.com/images/product-gallery-emguarde-1.jpg" alt="Home wellness EMF protection device"><div class="hws-solution-icon">3</div><h3>EMF Protection</h3><p>Education-based home wellness support for families looking to create a more balanced environment with modern technology.</p><a class="hws-btn hws-btn-outline" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Ask About EMF Protection</a></div><div class="hws-solution-card"><img src="https://www.enagic.com/images/product-gallery-anespa-1-2x.jpg" alt="Premium shower and bath water system"><div class="hws-solution-icon">4</div><h3>Shower & Bath Water</h3><p>Water wellness beyond the kitchen sink for bathing, showering, skin, hair, and everyday family routines.</p><a class="hws-btn hws-btn-outline" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Ask About Shower Water</a></div></div><div class="hws-solution-note"><div><h3>Not sure which path fits your home?</h3><p>Use the quick quiz below or schedule a call to get pointed toward the best starting option.</p></div><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule Your Strategy Call</a></div></div></section>
 
-    <section class="section" id="quiz">
-      <div class="container quiz-wrap">
-        <p class="eyebrow">Quick water quiz</p>
-        <h2>What are you most concerned about?</h2>
-        <div class="quiz-options">
-          <button class="quiz-btn" data-result="Taste, odor, and drinking water quality are probably the best place to start. A drinking water consultation would make sense.">Taste or odor</button>
-          <button class="quiz-btn" data-result="Hard water and whole-home water quality should be reviewed. A whole-home consultation would be a good first step.">Hard water buildup</button>
-          <button class="quiz-btn" data-result="If you are not sure what is in your water, education and basic testing should come before choosing a system.">I am not sure</button>
-        </div>
-        <div class="quiz-result" id="quizResult">Choose an option above to see your recommended starting point.</div>
-      </div>
-    </section>
+<section class="hws-section hws-section-aqua"><div class="hws-wrap"><div class="hws-two-grid"><div><div class="hws-section-label">Convenience Matters</div><h2>Tired of hauling water?</h2><p>If you are buying bottled water, filling jugs, visiting refill stations, or making extra trips just to get drinking water, there may be a better way.</p><p>A premium in-home drinking water solution can help make quality water easier to access right where your family already uses it: at the kitchen sink.</p><ul class="hws-list-check"><li>No more heavy 5-gallon jugs</li><li>No more last-minute water runs</li><li>No more storing stacks of bottles</li><li>No more wondering what your current filter is really doing</li></ul><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule a Strategy Call</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-image-wrap"><img src="https://img1.wsimg.com/isteam/ip/d33e5144-30b8-4b08-8d52-5481dc8cf666/hws-hauling-water.png/:/rs=w:400,cg:true,m" alt="Person struggling to carry 5 gallon water jugs to a car"><div class="hws-image-badge"><strong>Quality water should be easier.</strong><span>Stop building your routine around water runs. Bring a smarter solution home.</span></div></div></div></div></section>
 
-    <section class="section contact" id="contact">
-      <div class="container contact-box">
-        <p class="eyebrow">Ready to talk?</p>
-        <h2>Schedule a water consultation.</h2>
-        <p>Use the booking link below to set up a time to discuss your water concerns and possible next steps.</p>
-        <a class="button primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener">Book a Consultation</a>
-      </div>
-    </section>
-  </main>
+<section class="hws-section hws-section-white" id="water-quiz"><div class="hws-wrap"><div class="hws-quiz-header"><div class="hws-section-label">Find Your Best Starting Point</div><h2>Take the 60-Second Water Quiz</h2><p>Answer a few quick questions and get pointed toward the best water and home wellness option based on your source water, current routine, and family priorities.</p></div><div class="hws-quiz-box"><div class="hws-progress"><div class="hws-progress-bar" id="hwsProgressBar"></div></div><div class="hws-question active" data-step="1"><div class="hws-question-title">What type of water do you have?</div><div class="hws-options"><button class="hws-option" data-key="source" data-value="city">City or municipal water</button><button class="hws-option" data-key="source" data-value="well">Private well water</button><button class="hws-option" data-key="source" data-value="unknown">I am not sure</button></div></div><div class="hws-question" data-step="2"><div class="hws-question-title">What are you most concerned about?</div><div class="hws-options"><button class="hws-option" data-key="concern" data-value="taste">Taste, odor, chlorine, or chemical taste</button><button class="hws-option" data-key="concern" data-value="contaminants">Lead, PFAS, VOCs, or other contaminants</button><button class="hws-option" data-key="concern" data-value="microbial">Bacteria, viruses, or untreated water concerns</button><button class="hws-option" data-key="concern" data-value="bottles">Bottled water, refill stations, or hauling jugs</button><button class="hws-option" data-key="concern" data-value="wellness">Premium wellness and daily hydration</button></div></div><div class="hws-question" data-step="3"><div class="hws-question-title">How do you currently get drinking water?</div><div class="hws-options"><button class="hws-option" data-key="current" data-value="tap">Tap water</button><button class="hws-option" data-key="current" data-value="fridge">Fridge or pitcher filter</button><button class="hws-option" data-key="current" data-value="bottled">Bottled water</button><button class="hws-option" data-key="current" data-value="refill">Refill stations or local spring water</button><button class="hws-option" data-key="current" data-value="existing">I already have a drinking water system</button></div></div><div class="hws-question" data-step="4"><div class="hws-question-title">What matters most to you?</div><div class="hws-options"><button class="hws-option" data-key="priority" data-value="performance">Best filtration performance</button><button class="hws-option" data-key="priority" data-value="convenience">Convenience and fewer water runs</button><button class="hws-option" data-key="priority" data-value="family">Family protection</button><button class="hws-option" data-key="priority" data-value="premium">Premium wellness experience</button><button class="hws-option" data-key="priority" data-value="cost">Reducing bottled water trips and costs</button></div></div><div class="hws-question" data-step="5"><div class="hws-question-title">Are you interested in upgrading beyond filtration?</div><div class="hws-options"><button class="hws-option" data-key="upgrade" data-value="yes">Yes, I want to learn about premium ionized water</button><button class="hws-option" data-key="upgrade" data-value="maybe">Maybe, show me more information</button><button class="hws-option" data-key="upgrade" data-value="no">No, I just want filtration right now</button></div></div><div class="hws-result" id="hwsResultCity"><span class="hws-result-badge">Recommended starting point</span><div class="hws-result-grid"><div><h3>Premium Drinking Water Filtration</h3><p>Based on your answers, your best starting point is a premium drinking water filtration solution for everyday family use.</p><p>This is a strong fit if you are on municipal water, want better-tasting drinking water, want to reduce bottled water or refill station trips, and want easier access to quality water at home.</p><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule a Water Review</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-result-card"><h3>Best for:</h3><ul class="hws-result-list"><li>City water homes</li><li>Families replacing bottled water</li><li>Better daily drinking water</li><li>Cooking, coffee, kids’ bottles, and pets</li></ul></div></div></div><div class="hws-result" id="hwsResultAdvanced"><span class="hws-result-badge">Advanced concerns</span><div class="hws-result-grid"><div><h3>Advanced Drinking Water Guidance Recommended</h3><p>Your answers suggest you may have advanced concerns such as private well water, untreated water, or bacteria and virus questions.</p><p>For these concerns, water testing and proper system selection matter. We recommend reviewing your water source before making a purchase decision.</p><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule a Water Review</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-result-card"><h3>Best next step:</h3><ul class="hws-result-list"><li>Review your source water</li><li>Discuss testing options</li><li>Understand advanced filtration needs</li><li>Avoid guessing on system selection</li></ul></div></div></div><div class="hws-result" id="hwsResultBottled"><span class="hws-result-badge">Convenience upgrade</span><div class="hws-result-grid"><div><h3>A Better Way Than Hauling Water</h3><p>Your answers suggest you may be spending time and effort on bottled water, refill stations, or local water runs.</p><p>A premium in-home drinking water solution can make better daily water easier by putting quality water right where your family already uses it.</p><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule a Water Review</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-result-card"><h3>Best for:</h3><ul class="hws-result-list"><li>Bottled water users</li><li>5-gallon jug users</li><li>Refill station routines</li><li>Families who want convenience</li></ul></div></div></div><div class="hws-result" id="hwsResultPremium"><span class="hws-result-badge">Premium wellness path</span><div class="hws-result-grid"><div><h3>Filtration First, Then Premium Ionized Water</h3><p>Your answers suggest you may be interested in a more complete water wellness experience.</p><p>We recommend starting with high-quality filtration, then exploring a premium ionized water system as an elevated daily hydration upgrade.</p><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule a Strategy Call</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-result-card"><h3>Best for:</h3><ul class="hws-result-list"><li>Wellness-minded families</li><li>Premium kitchen upgrades</li><li>Daily hydration routines</li><li>People who want education before buying</li></ul></div></div></div><p class="hws-small-note">This quiz is for education and general product guidance only. It is not a water test and does not replace professional review of your home’s water conditions.</p></div></div></section>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <p>© <span id="year"></span> Healthy Water Solutions LLC. All rights reserved.</p>
-      <p>Educational information only. Product recommendations should be based on your specific water quality needs.</p>
-    </div>
-  </footer>
+<section class="hws-section hws-section-soft"><div class="hws-wrap"><div class="hws-two-grid"><div class="hws-image-wrap"><img src="https://img1.wsimg.com/isteam/ip/d33e5144-30b8-4b08-8d52-5481dc8cf666/hws-water-specialist-testing.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:870" alt="Certified water specialist testing water with a family in a bright kitchen"><div class="hws-image-badge"><strong>Education before recommendation.</strong><span>Understand your water, your options, and your best next step before making a decision.</span></div></div><div><div class="hws-section-label">Local Expert Guidance</div><h2>Work with a local Certified Water Specialist.</h2><p>Healthy Water Solutions LLC was built to help health-conscious families make better, more informed decisions about drinking water, daily hydration, shower water, and home wellness.</p><p>Instead of pushing a one-size-fits-all recommendation, we take an education-first approach. We help you understand your concerns, compare solution types, and choose a path that makes sense for your family.</p><div class="hws-card" style="margin-top:28px;"><h3>During a True Health Strategy Call, we can review:</h3><ul class="hws-specialist-list"><li>Your current water setup</li><li>Your water concerns</li><li>Bottled water or refill use</li><li>Filtration goals</li><li>Hydration goals</li><li>Shower water concerns</li><li>EMF protection interests</li><li>Your best next step</li></ul></div><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule Your True Health Strategy Call</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div></div></div></section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="hws-section hws-section-white"><div class="hws-wrap"><div class="hws-education-header"><div class="hws-section-label">Learn Before You Buy</div><h2>Better water decisions start with better questions.</h2><p>Water quality can be confusing. Our goal is to help you understand the problems, the options, and the order that makes the most sense for your home.</p></div><div class="hws-education-grid"><div class="hws-education-card"><div class="hws-education-icon">1</div><h3>What could be hiding in your drinking water?</h3><p>Clear water does not always mean clean water. Depending on your source and plumbing, your water may deserve a closer look before your family drinks it every day.</p></div><div class="hws-education-card"><div class="hws-education-icon">2</div><h3>Why taste alone does not tell the whole story.</h3><p>Water can taste fine and still raise questions about chlorine, lead, PFAS, VOCs, sediment, disinfection byproducts, or other unwanted contaminants.</p></div><div class="hws-education-card"><div class="hws-education-icon">3</div><h3>Bottled water is not always the easiest answer.</h3><p>Buying bottles, hauling jugs, and making refill trips can be inconvenient. A premium in-home solution can make better daily water easier.</p></div><div class="hws-education-card"><div class="hws-education-icon">4</div><h3>Why filtration should come before ionization.</h3><p>A premium hydration experience should start with properly filtered water. The better the foundation, the smarter the upgrade.</p></div><div class="hws-education-card"><div class="hws-education-icon">5</div><h3>Your shower water matters too.</h3><p>Most people think about drinking water first, but your family also uses water every day for showers, baths, skin, hair, and children’s routines.</p></div><div class="hws-education-card"><div class="hws-education-icon">6</div><h3>Home wellness goes beyond water.</h3><p>Phones, Wi-Fi, laptops, tablets, routers, and connected devices are part of modern life. Some families want a more balanced home wellness strategy.</p></div></div><div class="hws-feature-box"><div><h3>The right order matters.</h3><p>A premium water setup should be selected with purpose. Before choosing a solution, it helps to understand your current water, your household habits, your concerns, and your goals.</p><p>Healthy Water Solutions LLC helps you look at the full picture so you can make a confident decision without guessing.</p></div><div><h3>Start with the basics.</h3><ul class="hws-feature-list"><li>Understand your source water</li><li>Review your current filter or bottled water routine</li><li>Choose the right filtration foundation</li><li>Consider a premium hydration upgrade</li><li>Look at shower and home wellness options</li></ul><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule Your Strategy Call</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div></div></div></section>
+
+<section class="hws-section hws-section-soft"><div class="hws-wrap"><div class="hws-two-grid"><div><div class="hws-section-label">Ready for a Smarter Next Step?</div><h2>Take a better look at the water your family uses every day.</h2><p>You do not have to figure this out alone. Healthy Water Solutions LLC helps you understand your current water routine, your family’s concerns, and the best path forward for your home.</p><p>Start with the quick quiz, schedule a True Health Strategy Call, or call directly if you would rather talk it through.</p><div class="hws-buttons"><a class="hws-btn hws-btn-primary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule Your True Health Strategy Call</a><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div><div class="hws-final-card"><h3>What happens next?</h3><p>We keep the process simple, educational, and focused on what makes sense for your home.</p><ul class="hws-final-list"><li>Answer a few quick questions</li><li>Understand your best starting point</li><li>Review drinking water and wellness options</li><li>Choose whether to buy, learn more, or schedule a call</li></ul><div class="hws-buttons"><a class="hws-btn hws-btn-secondary" href="tel:2623686909">Call 262-368-6909</a></div></div></div><div class="hws-footer-info"><div class="hws-footer-brand"><img src="https://lh3.googleusercontent.com/VyfSq_MBYLm3YYYyKGbwVP8tLFSMavYRbXwcQHPD0PVOpzJ8B_NsBU4OKkkbccKYVN0nL9g64QafuLe-gA=w1703" alt="Healthy Water Solutions LLC logo"><div><strong>Healthy Water Solutions LLC</strong><span>Premium water and home wellness education for health-conscious families.</span></div></div><div><a class="hws-footer-phone" href="tel:2623686909">262-368-6909</a></div></div><p class="hws-disclaimer">Healthy Water Solutions LLC provides education and product guidance related to water quality and home wellness. Information on this website is for educational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. Water quality concerns and solution recommendations may vary based on individual home conditions and water source.</p></div></section>
+
+<script>
+(function(){
+  const site=document.querySelector("#hws-site");
+  if(!site)return;
+  const quiz=site.querySelector("#water-quiz");
+  if(!quiz)return;
+  const answers={};
+  const questions=Array.from(quiz.querySelectorAll(".hws-question"));
+  const results=Array.from(quiz.querySelectorAll(".hws-result"));
+  const progress=quiz.querySelector("#hwsProgressBar");
+  let step=0;
+  function showStep(index){
+    questions.forEach((q,i)=>q.classList.toggle("active",i===index));
+    if(progress){progress.style.width=(index/questions.length)*100+"%";}
+  }
+  function showResult(){
+    questions.forEach(q=>q.classList.remove("active"));
+    results.forEach(r=>r.classList.remove("active"));
+    if(progress){progress.style.width="100%";}
+    let resultId="hwsResultCity";
+    if(answers.source==="well"||answers.source==="unknown"||answers.concern==="microbial"){
+      resultId="hwsResultAdvanced";
+    }else if(answers.current==="bottled"||answers.current==="refill"||answers.concern==="bottles"||answers.priority==="cost"||answers.priority==="convenience"){
+      resultId="hwsResultBottled";
+    }else if(answers.priority==="premium"||answers.upgrade==="yes"||answers.concern==="wellness"){
+      resultId="hwsResultPremium";
+    }
+    const selected=quiz.querySelector("#"+resultId);
+    if(selected){selected.classList.add("active");}
+  }
+  quiz.querySelectorAll(".hws-option").forEach(button=>{
+    button.addEventListener("click",function(){
+      answers[this.dataset.key]=this.dataset.value;
+      step++;
+      if(step<questions.length){showStep(step);}else{showResult();}
+    });
+  });
+  showStep(0);
+})();
+</script>
+</div>
