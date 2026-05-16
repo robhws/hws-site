@@ -1,20 +1,24 @@
-# Healthy Water Solutions Starter Site
+# Healthy Water Solutions LLC Website
 
-This is a simple static HTML website ready for GitHub Pages.
+GitHub Pages static site package with SEO metadata, Open Graph tags, Twitter card tags, LocalBusiness schema, robots.txt, and sitemap.xml.
 
-## Files
+## Upload instructions
 
-- `index.html` - main homepage
-- `style.css` - site styling
-- `script.js` - menu and quiz behavior
-- `images/` - place image files here
+Upload these files to the root of the GitHub repository:
 
-## GitHub Pages Setup
+- index.html
+- robots.txt
+- sitemap.xml
+- README.md
 
-1. Upload these files to your GitHub repository.
-2. Go to Settings > Pages.
-3. Choose Deploy from a branch.
-4. Select `main` and `/root`.
-5. Save.
+After committing, GitHub Pages should update the live site automatically.
 
-Your site will publish at the GitHub Pages URL shown in the Pages settings.
+## When connecting a custom domain
+
+After the custom domain is connected, update these URLs inside index.html, robots.txt, and sitemap.xml from:
+
+https://robhws.github.io/hws-site/
+
+to the final domain, such as:
+
+https://healthyh2osolutions.com/

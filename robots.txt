@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robhws.github.io/hws-site/sitemap.xml
