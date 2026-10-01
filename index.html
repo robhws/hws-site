@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,9 +43,39 @@
 .education-link{display:inline-flex;align-items:center;gap:8px;margin-top:auto;color:var(--teal);font-weight:900}
 .education-link:hover{color:#092f30}
 @media(max-width:900px){.education-grid{grid-template-columns:1fr}}
+
+.top-nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,61,62,.10);box-shadow:0 8px 24px rgba(15,61,62,.05)}
+.top-nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.nav-brand{display:flex;align-items:center;gap:11px;color:var(--teal);font-weight:900;line-height:1.1;white-space:nowrap}
+.nav-brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;box-shadow:0 8px 18px rgba(15,61,62,.14)}
+.nav-links{display:flex;align-items:center;justify-content:flex-end;gap:20px;flex-wrap:wrap}
+.nav-links a{color:var(--dark);font-size:14px;font-weight:800}
+.nav-links a:hover{color:var(--teal)}
+.nav-links .nav-cta{padding:10px 16px;border-radius:999px;background:var(--teal);color:#fff!important}
+.article-section-actions{margin-top:26px}
+@media(max-width:960px){.top-nav .wrap{align-items:flex-start;flex-direction:column;padding-top:14px;padding-bottom:14px}.nav-links{justify-content:flex-start;gap:13px 16px}.nav-links a{font-size:13px}.nav-links .nav-cta{padding:8px 13px}}
+
 </style>
 </head>
 <body>
+
+<header class="top-nav">
+  <div class="wrap">
+    <a class="nav-brand" href="/" aria-label="Toxin Free with Rob home">
+      <img src="https://raw.githubusercontent.com/robhws/hws-site/main/logo.png" alt="Toxin Free with Rob logo">
+      <span>Toxin Free with Rob</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/water-testing/">Water Testing</a>
+      <a href="/water-filtration/">Water Filtration</a>
+      <a href="/healthy-home/">Healthy Home</a>
+      <a href="/articles/">Articles</a>
+      <a href="#meet-rob">Meet Rob</a>
+      <a class="nav-cta" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Strategy Call</a>
+    </nav>
+  </div>
+</header>
 <main>
 <section class="hero"><div class="wrap"><div class="grid-2"><div><div class="logo-row"><img src="https://raw.githubusercontent.com/robhws/hws-site/main/logo.png" alt="Toxin Free with Rob logo"><div class="logo-text">Toxin Free with Rob<br><span>Water Testing • Filtration • Hydrogen-Rich Alkaline Water • Home Wellness</span></div></div><div class="badge-row"><span>Education First</span><span>Certified Guidance</span><span>Toxin-Free Living</span></div><h1>What's Really In Your Water?</h1><p class="lead">From PFAS and lead to microplastics, pharmaceuticals, bacteria, viruses, and other contaminants, understanding your water is the first step toward making informed decisions about your family's health, hydration, and home environment.</p><div class="buttons"><a class="btn btn-primary" href="/water-testing/">Explore Water Testing</a><a class="btn btn-secondary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Book a Strategy Call</a><a class="btn btn-outline" href="https://leadman.systeme.io/water-quiz" target="_blank" rel="noopener noreferrer">Start Your Assessment</a></div></div><div class="hero-visual"><div class="hero-card"><strong>Guidance before guesswork.</strong><span>Whether you're exploring better drinking water, certified testing, filtration, premium hydration, shower water, or a toxin-free home, the right starting point depends on your goals and concerns.</span></div></div></div></div></section>
 <section class="section white"><div class="wrap"><div class="grid-2"><div><div class="label">Our Mission</div><h2>Built to help you make confident decisions.</h2></div><div><p>As a WQA Certified Water Specialist and dad, I know firsthand how important it is to feel confident in the choices we make for our families and the people we care about most.</p><p>Toxin Free with Rob was built on the belief that parents and health-conscious families deserve access to trustworthy information, quality products, and personalized guidance when it comes to water quality, hydration, and building a genuinely toxin-free home.</p><p>My goal is simple: to help you make informed decisions, reduce the guesswork, and find the solutions that best fit your family's health goals, lifestyle, and needs — starting with the thing most people overlook first: their water.</p></div></div></div></section>
@@ -58,6 +89,8 @@
       <h2>Understand your water before choosing a solution.</h2>
       <p class="lead">Explore practical, education-first articles designed to help homeowners understand water sources, contaminants, testing, filtration, and treatment options.</p>
     </div>
+
+    <div class="article-section-actions"><a class="btn btn-outline" href="/articles/">View All Articles</a></div>
 
     <div class="education-grid">
       <article class="education-card">
@@ -89,6 +122,6 @@
 <section class="section soft"><div class="wrap"><div style="max-width:820px;margin-bottom:38px;"><div class="label">Trust & Guidance</div><h2>Helping families make confident decisions.</h2><p class="lead">Education-first guidance, practical recommendations, and a no-pressure experience.</p></div><div class="reviews"><div class="quote"><p>"Rob is so knowledgeable and helped save me a lot of money by helping me with my water filtration system from purchase through set-up."</p><strong>— Tina P.</strong></div><div class="quote"><p>"This system makes so many different things I can use... Looking forward to using all the amazing things this system does!"</p><strong>— Kevin W.</strong></div><div class="quote"><p>"The goal is simple: understand your situation first, then recommend the path that makes the most sense."</p><strong>— Toxin Free with Rob</strong></div></div></div></section>
 <section class="section white" id="who-we-help"><div class="wrap"><div style="max-width:840px;margin-bottom:38px;"><div class="label">Who I Help</div><h2>Built for health-conscious parents who want better answers.</h2><p class="lead">Toxin Free with Rob supports parents and families who value education, quality products, and guidance before making decisions about water, hydration, and a toxin-free home.</p></div><div class="grid-3"><div class="who-card"><h3>Health-Conscious Parents</h3><p>Parents who want more confidence around what's in their family's drinking water, shower water, and the environment inside their home.</p></div><div class="who-card"><h3>Families & Homeowners</h3><p>Homeowners and caregivers who value hydration, wellness-focused routines, and making informed, toxin-conscious upgrades.</p></div><div class="who-card"><h3>People With Water Concerns</h3><p>Municipal water users, private well owners, and anyone looking for testing, filtration, or guidance before buying equipment.</p></div></div></div></section><section class="section white"><div class="wrap"><div class="cta-final"><div class="label">Ready To Take The Next Step?</div><h2>Get guidance before you guess.</h2><p class="lead" style="max-width:760px;margin:0 auto 18px;">Whether you're looking for answers, exploring premium hydration, interested in water testing, or simply want guidance from someone you can trust, Toxin Free with Rob is here to help.</p><div class="buttons" style="justify-content:center;"><a class="btn btn-primary" href="https://leadman.systeme.io/water-quiz" target="_blank" rel="noopener noreferrer">Start Your Assessment</a><a class="btn btn-secondary" href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">Schedule a Strategy Call</a></div></div></div></section>
 </main>
-<footer><div class="wrap"><div class="footer-grid"><div><h3 style="color:#fff;">Toxin Free with Rob</h3><p>Helping health-conscious parents and families make informed decisions about water quality, hydration, and building a healthier, toxin-free home.</p><p><a href="tel:2623686909">262-368-6909</a></p></div><div><h3 style="color:#fff;">Solutions</h3><div class="footer-links"><a href="/water-testing/">Water Testing</a><a href="/water-filtration/">Water Filtration</a><a href="/healthy-home/">Healthy Home Solutions</a><a href="https://h2richwater.com/" target="_blank" rel="noopener noreferrer">Kangen Water</a><a href="/waukesha-water-filtration/">Waukesha Water Filtration</a><a href="#water-education">Water Education</a><a href="https://leadman.systeme.io/water-quiz" target="_blank" rel="noopener noreferrer">Health & Water Assessment</a><a href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">True Health Strategy Call</a></div></div><div><h3 style="color:#fff;">Service Areas</h3><p>Southeast Wisconsin, United States, Canada, and global Enagic product education where available.</p></div></div><p class="disclaimer">Toxin Free with Rob, operated by Healthy Water Solutions LLC, provides education and product guidance related to water quality, hydration, filtration, and toxin-free home wellness. Information on this website is for educational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. Recommendations may vary based on individual home conditions, water source, goals, and product availability.</p></div></footer>
+<footer><div class="wrap"><div class="footer-grid"><div><h3 style="color:#fff;">Toxin Free with Rob</h3><p>Helping health-conscious parents and families make informed decisions about water quality, hydration, and building a healthier, toxin-free home.</p><p><a href="tel:2623686909">262-368-6909</a></p></div><div><h3 style="color:#fff;">Solutions</h3><div class="footer-links"><a href="/water-testing/">Water Testing</a><a href="/water-filtration/">Water Filtration</a><a href="/healthy-home/">Healthy Home Solutions</a><a href="https://h2richwater.com/" target="_blank" rel="noopener noreferrer">Kangen Water</a><a href="/waukesha-water-filtration/">Waukesha Water Filtration</a><a href="/articles/">Articles &amp; Water Education</a><a href="https://leadman.systeme.io/water-quiz" target="_blank" rel="noopener noreferrer">Health & Water Assessment</a><a href="https://calendar.app.google/KJgVD2Zn1YzMgyMA7" target="_blank" rel="noopener noreferrer">True Health Strategy Call</a></div></div><div><h3 style="color:#fff;">Service Areas</h3><p>Southeast Wisconsin, United States, Canada, and global Enagic product education where available.</p></div></div><p class="disclaimer">Toxin Free with Rob, operated by Healthy Water Solutions LLC, provides education and product guidance related to water quality, hydration, filtration, and toxin-free home wellness. Information on this website is for educational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. Recommendations may vary based on individual home conditions, water source, goals, and product availability.</p></div></footer>
 </body>
 </html>
