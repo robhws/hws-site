@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://healthyh2osolutions.com/sitemap.xml
+Sitemap: https://toxinfreewithrob.com/sitemap.xml
